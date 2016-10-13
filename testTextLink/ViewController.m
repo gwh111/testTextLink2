@@ -24,10 +24,8 @@
     textLabel.delegate=self;
     [self.view addSubview:textLabel];
     
-    
-    
     NSString *origHtml;
-    origHtml=[NSString stringWithFormat:@"%@%@：%@",@"abc",[NSString stringWithFormat:@"<img src=\"file://%@\" width=\"30\" height=\"15\"/ style=\"vertical-align:-20%%\">abccasdcc<img src=\"http://cc.cocimg.com/api/uploads/160927/dcc9a3f21c41a5c8cbcaa9e265d108a2.jpg\" width=\"30\" height=\"15\"/ style=\"vertical-align:-20%%\">",[[NSBundle mainBundle] pathForResource:@"卷轴.png" ofType:nil]],@"aaa"];
+    origHtml=[NSString stringWithFormat:@"%@%@：%@",@"abc",[NSString stringWithFormat:@"<img src=\"file://%@\" width=\"30\" height=\"15\"/ style=\"vertical-align:-20%%\">absdcc<img src=\"http://cc.cocimg.com/api/uploads/160927/dcc9a3f21c41a5c8cbcaa9e265d108a2.jpg\" width=\"30\" height=\"15\"/ style=\"vertical-align:-20%%\">",[[NSBundle mainBundle] pathForResource:@"卷轴.png" ofType:nil]],@"aaa"];
 
     origHtml=[origHtml stringByReplacingOccurrencesOfString:@"<br>" withString:@""];
     origHtml=[origHtml stringByReplacingOccurrencesOfString:@"</p>" withString:@""];
